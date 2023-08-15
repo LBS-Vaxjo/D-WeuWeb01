@@ -1,6 +1,6 @@
 ---
 status: new
-title: Github-Termer
+title: Github Termer
 ---
 
 # GitHub-termer att känna till
