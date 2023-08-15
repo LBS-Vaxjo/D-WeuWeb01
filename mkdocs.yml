@@ -22,6 +22,8 @@ theme:
     # Github integration?
     - content.action.edit
     - content.action.view
+    # Content Tabs
+    - content.tabs.link
 
   # Pallettes?
   palette:
@@ -48,6 +50,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   
   - toc:
       toc_depth: 3
@@ -67,4 +72,3 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/LBS-Vaxjo
       name: LBS Växjö's Github
-    
