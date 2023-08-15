@@ -1,10 +1,16 @@
 site_name: Webbutveckling 01
+repo_url: https://github.com/LBS-Vaxjo/D-WeuWeb01
 theme:
   name: material
   language: sv
   features:
     - navigation.instant
     - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+
+    - navigation.footer
+
   palette:
     
     - scheme: default
@@ -21,4 +27,14 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/LBS-Vaxjo
+      name: LBS Växjö's Github
     
