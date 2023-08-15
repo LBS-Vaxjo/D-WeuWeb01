@@ -1,20 +1,32 @@
-site_name: Webbutveckling 01
+site_name: System Hub
+
+# Repository settings
 repo_url: https://github.com/LBS-Vaxjo/D-WeuWeb01
+repo_name: SystemHub
+edit_uri: edit/main/docs/
+
+# Theme settings
 theme:
   name: material
-  language: sv
+  language: en
   features:
+    # Navigation features
     - navigation.instant
     - navigation.tabs
     - navigation.path
     - navigation.indexes
-
+    # Footer
     - navigation.footer
-
+    # Table of contents
     - toc.follow
+    # Github integration?
+    - content.action.edit
+    - content.action.view
 
+  # Pallettes?
   palette:
     
+    # Palette toggle for white mode
     - scheme: default
       primary: purple
       accent: deep purple
@@ -30,6 +42,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+# Markdown Extensions
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -39,11 +52,17 @@ markdown_extensions:
   - toc:
       toc_depth: 3
 
+# material/Mkdocs plugins
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
 
+# Extra features from material?
 extra:
+  status:
+    - new: Recently Added
+    - deprecated: Not in use anymore
+
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/LBS-Vaxjo
