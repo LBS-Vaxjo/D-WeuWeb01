@@ -11,6 +11,8 @@ theme:
 
     - navigation.footer
 
+    - toc.follow
+
   palette:
     
     - scheme: default
@@ -27,6 +29,15 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  
+  - toc:
+      toc_depth: 3
 
 plugins:
   - git-revision-date-localized:
