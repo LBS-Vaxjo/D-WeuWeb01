@@ -7,17 +7,25 @@ title: Github
 
 ## Commands
 
-==="Add"
+=== "Add"
     # Git Add
 
-==="Commit"
+    ```git
+    git add {file/s}
+    ```
+
+=== "Commit"
     # git commit
 
-==="Push"
+    ```
+    git commit -m "message"
+    ```
+
+=== "Push"
     # git push
 
-==="fetch"
+=== "fetch"
     # git feth
 
-==="pull"
+=== "pull"
     # git pull
