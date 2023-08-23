@@ -1,0 +1,1136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="github-termer/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+    
+    
+      
+        <title>Grunderna i GitHub - System Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6v2Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#grunderna-i-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="System Hub" class="md-header__button md-logo" aria-label="System Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            System Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Grunderna i GitHub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LBS-Vaxjo/D-WeuWeb01" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SystemHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  GitHub
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Gr%C3%A4nssnits%20Design/" class="md-tabs__link">
+          
+  
+    
+  
+  Gränssnits Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../WebbserverProgrammering/" class="md-tabs__link">
+          
+  
+    
+  
+  WebbserverProgrammering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Webbutveckling%201/" class="md-tabs__link">
+          
+  
+    
+  
+  Webbutveckling 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Webbutveckling%202/" class="md-tabs__link">
+          
+  
+    
+  
+  Webbutveckling 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../cheatsheet/Github/" class="md-tabs__link">
+          
+  
+    
+  
+  Cheatsheet
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="System Hub" class="md-nav__button md-logo" aria-label="System Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    System Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LBS-Vaxjo/D-WeuWeb01" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SystemHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+            </a>
+            
+              <label class="md-nav__link md-nav__link--active" for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            GitHub
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="github-termer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github Termer
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Gr%C3%A4nssnits%20Design/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Gränssnits Design
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Gränssnits Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../WebbserverProgrammering/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WebbserverProgrammering
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            WebbserverProgrammering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Webbutveckling%201/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Webbutveckling 1
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Webbutveckling 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Webbutveckling%201/Del%201%20html%20%26%20css/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Del 1 html & css
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Del 1 html & css
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Webbutveckling%202/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Webbutveckling 2
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Webbutveckling 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cheatsheet
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Cheatsheet
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheatsheet/Github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kursoversikt-och-larandemal" class="md-nav__link">
+    Kursöversikt och lärandemål
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-och-github" class="md-nav__link">
+    Git och GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forsta-github-flodet" class="md-nav__link">
+    Förstå GitHub-flödet
+  </a>
+  
+    <nav class="md-nav" aria-label="Förstå GitHub-flödet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repository-repositories" class="md-nav__link">
+    Repository (Repositories)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kloning-cloning" class="md-nav__link">
+    Kloning (Cloning)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commita-och-pusha-committing-and-pushing" class="md-nav__link">
+    Commita och pusha (Committing and pushing)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+    <nav class="md-nav" aria-label="Extras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#din-anvandarprofil" class="md-nav__link">
+    Din användarprofil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anvanda-markdown-pa-github" class="md-nav__link">
+    Använda markdown på GitHub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engagera-dig-med-github-communityn" class="md-nav__link">
+    Engagera dig med GitHub-communityn
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valbara-nasta-steg" class="md-nav__link">
+    📝 Valbara nästa steg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resurser" class="md-nav__link">
+    📚 Resurser
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/LBS-Vaxjo/D-WeuWeb01/edit/main/docs/GitHub/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/LBS-Vaxjo/D-WeuWeb01/raw/main/docs/GitHub/index.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="grunderna-i-github">Grunderna i GitHub</h1>
+<hr />
+<h2 id="kursoversikt-och-larandemal">Kursöversikt och lärandemål</h2>
+<p>Målet med den här kursen är att ge dig en kort introduktion till GitHub. Vi kommer också att tillhandahålla material för vidare lärande samt några idéer för att komma igång på vår plattform.</p>
+<hr />
+<h2 id="git-och-github">Git och GitHub</h2>
+<p>Git är ett <strong>distribuerat Versionshanteringssystem (VCS)</strong>, vilket innebär att det är ett användbart verktyg för att enkelt spåra ändringar i din kod, samarbeta och dela. Med Git kan du spåra ändringarna du gör i ditt projekt så att du alltid har en historia över vad du har arbetat med och enkelt kan återgå till en äldre version om det behövs. Det gör också samarbete med andra enklare – grupper av människor kan arbeta tillsammans på samma projekt och sammanfoga sina ändringar till en gemensam källa!</p>
+<p>GitHub är ett sätt att använda samma kraft som Git online med ett användarvänligt gränssnitt. Det används över hela mjukvaruvärlden och bortom det för att samarbeta och behålla projektens historia.</p>
+<p>GitHub är hem för några av världens mest avancerade teknologier. Oavsett om du visualiserar data eller bygger ett nytt spel finns det en hel gemenskap och uppsättning verktyg på GitHub som kan ta dig till nästa steg. Den här kursen börjar med grunderna i GitHub, men vi kommer att gräva djupare senare.</p>
+<h2 id="forsta-github-flodet">Förstå GitHub-flödet</h2>
+<hr />
+<p>GitHub-flödet är en lättviktsprocess som gör det möjligt för dig att experimentera och samarbeta med dina projekt enkelt, utan risken att förlora ditt tidigare arbete.</p>
+<h3 id="repository-repositories">Repository (Repositories)</h3>
+<p>Ett repository är där ditt projektarbete äger rum - tänk på det som din projektmapp. Det innehåller alla dina projekts filer och revisionshistorik. Du kan arbeta inom ett repository själv eller bjuda in andra att samarbeta med dig på dessa filer.</p>
+<h3 id="kloning-cloning">Kloning (Cloning)</h3>
+<p>När ett repository skapas med GitHub, lagras det på distans i ☁️. Du kan klona ett repository för att skapa en lokal kopia på din dator och sedan använda Git för att synkronisera de två. Detta gör det enklare att åtgärda problem, lägga till eller ta bort filer och skicka större ändringar. Du kan också använda redigeringsverktyget efter eget val istället för GitHub UI. Att klona ett repository hämtar också ner all repositorysdata som GitHub har vid den tidpunkten, inklusive alla versioner av varje fil och mapp för projektet! Detta kan vara till hjälp om du experimenterar med ditt projekt och sedan inser att du gillade en tidigare version mer. För att lära dig mer om kloning, läs <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">"Klona ett repository"</a>.</p>
+<h3 id="commita-och-pusha-committing-and-pushing">Commita och pusha (Committing and pushing)</h3>
+<p><strong>Commita</strong> och <strong>pusha</strong> är hur du kan lägga till ändringar du gjort på din lokala maskin till det avlägsna repositoryet på GitHub. På det sättet kan din instruktör och/eller dina lagkamrater se ditt senaste arbete när du är redo att dela det. Du kan göra en commit när du har gjort ändringar i ditt projekt som du vill "checkpointa." Du kan också lägga till ett användbart <strong>commit-meddelande</strong> för att påminna dig själv eller dina lagkamrater om vilket arbete du har gjort (t.ex. "Lade till en README med information om vårt projekt").</p>
+<p>När du har en commit eller flera commitar som du är redo att lägga till i ditt repository kan du använda kommandot "push" för att lägga till dessa ändringar i ditt avlägsna repository. Att commita och pusha kan kännas nytt i början, men vi lovar att du kommer att vänja dig </p>
+<h2 id="extras">Extras</h2>
+<h3 id="din-anvandarprofil">Din användarprofil</h3>
+<p>Din profil sida berättar för människor historien om ditt arbete genom de repository du är intresserad av, de bidrag du har gjort och de samtal du har haft. Du kan också ge världen en unik vy in i vem du är med din profil README. Du kan använda din profil för att låta framtida arbetsgivare veta allt om dig! För att lära dig mer om din användarprofil och hur du lägger till och uppdaterar din profil README, läs <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme">"Hantera din Profil README"</a>.</p>
+<h3 id="anvanda-markdown-pa-github">Använda markdown på GitHub</h3>
+<p>Du har kanske redan lagt märke till det, men du kan lägga till lite rolig formatering i dina issues, pull requests och filer. <a href="https://guides.github.com/features/mastering-markdown/">"Markdown"</a> är ett enkelt sätt att formatera dina issues, pull requests och filer med några enkla syntax. Detta kan vara användbart för att organisera din information och göra det enklare för andra att läsa. Du kan också lägga till gifs och bilder för att underlätta förståelsen! För att lära dig mer om att använda GitHub's variant av markdown, läs <a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">"Grundläggande Skriv- och Formateringssyntax"</a>.</p>
+<h3 id="engagera-dig-med-github-communityn">Engagera dig med GitHub-communityn</h3>
+<p>GitHub-communityn är omfattande. Det finns många typer av människor som använder GitHub i sin vardag - studenter som du, professionella utvecklare, entusiaster som arbetar med öppen källkod och upptäcktsresande som just hoppar in i världen av mjukvaruutveckling på egen hand. Det finns många sätt du kan interagera med den större GitHub-communityn, men här är tre platser där du kan börja.</p>
+<h4 id="stjarnmarkera-repository">Stjärnmarkera repository</h4>
+<p>Om du tycker att ett repository är intressant eller om du vill hålla koll på det, stjärnmarkera det! När du stjärnmarkerar ett repository används det också som en signal för att ge bättre rekommendationer på github.com/explore. Om du vill komma tillbaka till dina stjärnmarkerade repository kan du göra det via din användarprofil. För att lära dig mer om att stjärnmarkera repository, läs <a href="https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars">"Spara repository med Stjärnor"</a>.</p>
+<h4 id="folj-anvandare">Följ användare</h4>
+<p>Du kan följa människor på GitHub för att få meddelanden om deras aktivitet och upptäcka projekt i deras communityn. När du följer en användare kommer deras offentliga GitHub-aktivitet att visas på din dashboard så att du kan se alla coola saker de arbetar med. För att lära dig mer om att följa användare, läs <a href="https://docs.github.com/en/github/getting-started-with-github/following-people">"Följa Personer"</a>.</p>
+<h4 id="bladdra-i-github-explore">Bläddra i GitHub Explore</h4>
+<p>GitHub Explore är en bra plats att göra just det... utforska <img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg" title=":smile:" /> Du kan hitta nya projekt, evenemang och utvecklare att interagera med.</p>
+<p>Du kan kolla in GitHub Explore-webbplatsen <a href="https://github.com/explore">på github.com/explore</a>. Ju mer du interagerar med GitHub, desto mer anpassad blir din Explore-vy.</p>
+<h2 id="valbara-nasta-steg">📝 Valbara nästa steg</h2>
+<ul>
+<li>Öppna en dra-begäran och låt din lärare veta att du har avslutat den här kursen.</li>
+<li>Skapa en ny markdown-fil i det här repositoryet. Låt dem veta vad du har lärt dig och vad du fortfarande är förvirrad över! Experimentera med olika stilar!</li>
+<li>Skapa din profil README. Låt världen veta lite mer om dig! Vad är du intresserad av att lära dig? Vad jobbar du på? Vad är din favorithobby? Lär dig mer om att skapa din profil README i dokumentet <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme">"Hantera din Profil README"</a>.</li>
+<li>Gå till din användardashboard och skapa ett nytt repository. Experimentera med funktionerna inom det repositoryet för att bekanta dig med dem.</li>
+<li><a href="https://support.github.com/contact/education">Låt oss veta vad du gillade eller inte gillade med innehållet i den här kursen</a>. Vad skulle du vilja se mer av? Vad skulle vara intressant eller hjälpsamt för din inlärningsresa?</li>
+</ul>
+<h2 id="resurser">📚 Resurser</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=w3jLJU7DT5E&amp;feature=youtu.be">En kort video som förklarar vad GitHub är</a></li>
+<li><a href="https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources">Git och GitHub lärande resurser</a></li>
+<li><a href="https://guides.github.com/introduction/flow/">Förstå GitHub-flödet</a></li>
+<li><a href="https://www.youtube.com/watch?v=H5GJfcp3p4Q&amp;feature=youtu.be">Hur man använder GitHub-branches</a></li>
+<li><a href="https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class">Interaktiv Git-träningsmaterial</a></li>
+<li><a href="https://lab.github.com/">GitHub's Learning Lab</a></li>
+<li><a href="https://education.github.community/">Utbildningscommunityns forum</a></li>
+<li><a href="https://github.community/">GitHub-communityns forum</a></li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="github-termer/" class="md-footer__link md-footer__link--next" aria-label="Next: Github Termer" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Github Termer
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/LBS-Vaxjo" target="_blank" rel="noopener" title="LBS Växjö&#39;s Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.path", "navigation.indexes", "navigation.footer", "toc.follow", "content.action.edit", "content.action.view", "content.tabs.link", "content.code.annotate"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+    
+  </body>
+</html>
