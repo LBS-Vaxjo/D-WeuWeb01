@@ -7,6 +7,8 @@ edit_uri: edit/main/docs/
 
 # Theme settings
 theme:
+  icon:
+    annotation: material/arrow-right-circle
   name: material
   language: en
   features:
@@ -24,6 +26,8 @@ theme:
     - content.action.view
     # Content Tabs
     - content.tabs.link
+    # Code Blocks
+    - content.code.annotate
 
   # Pallettes?
   palette:
@@ -47,9 +51,16 @@ theme:
 # Markdown Extensions
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -60,7 +71,7 @@ markdown_extensions:
 # material/Mkdocs plugins
 plugins:
   - git-revision-date-localized:
-      enable_creation_date: true
+      enable_creation_date: false
 
 # Extra features from material?
 extra:
